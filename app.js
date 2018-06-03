@@ -49,7 +49,7 @@ bot.endConversationAction('Despedirse', 'Fue un gusto ayudarte. ¡Hasta luego!',
 
 bot.dialog('Ayudar', function(session, args){
     if(args && args.algoMas){
-        session.endDialog("¿Puedo ayudarlo en algo más?");
+        session.endDialog("¿En qué más puedo ayudarlo?");
     }else{
         session.endDialog('Para buscar una persona escribe "Quien es", "Quien trabaja en" mas el término de busqueda');
     }
